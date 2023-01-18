@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container-md border"><!--this is the container element-->
+        <!-- rows can have different columns under them.-->
+        <!--col automatically allocates the same space to the other columns-->
+        <div class="row border justify-content-center">
+            <div class="col">one</div>
+            <div class="col">two</div>
+            <div class="col">three</div>
+        </div>
+
+        <!--col using the same number of grids to divide page the col-->
+        <div class="row border text-center">
+            <div class="col-3">one</div>
+            <div class="col-3">two</div>
+            <div class="col-3">three</div>
+            <div class="col-3">four</div>
+        </div>
+
+        <!--col using the different number of grids to divide page the col-->
+        <div class="row border text-center">
+            <div class="col-3">one</div>
+            <div class="col-6">two</div>
+            <div class="col-3">three</div>
+        </div>
+
+        <!--col using the different responsive breakpoints and number of grids to divide page the col-->
+        <div class="row border text-center">
+            <div class="col-lg-8 col-md-6">one</div>
+            <div class="col-lg-4 cols-md-6">two</div>
+        </div>
+    </div>
+    <!-- bootstrap js link -->
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>

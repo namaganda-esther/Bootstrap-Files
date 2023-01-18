@@ -1,0 +1,60 @@
+.col{
+    background-color: #33b5e5;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.col-3 {
+    background-color: #33b5e5;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.col-6 {
+    background-color: #33b5e5;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.col-lg-8 {
+    background-color: #33b5e5;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.col-lg-4 {
+    background-color: #33b5e5;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.col-sm-3 {
+    background-color: #33b5e5;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.col-8 {
+    background-color: #33b5e5;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.col-4 {
+    background-color: #33b5e5;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+ /* Creates a wrapper for a series of columns */
+@include make-row();
+
+ /* Make the element grid-ready (applying everything but the width) */
+@include make-col-ready();
+
+/* Without optional size values, the mixin will create equal columns (similar to using .col) */
+@include make-col();
+@include make-col($size, $columns: $grid-columns);
+
+/* Get fancy by offsetting, or changing the sort order */
+@include make-col-offset($size, $columns: $grid-columns);

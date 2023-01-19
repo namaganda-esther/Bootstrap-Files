@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Images</title>
+
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <!-- adding a border to an image -->
+    <div class="container my-5">
+        <div style="width: 40%; border: 5px red solid">
+            <img src="https://picsum.photos/536/354" class="img-fluid"
+            alt=""> 
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="./Images/apple.jpeg" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="./Images/bananas.jpeg" class="rounded float-start" alt="...">
+                <img src="./Images/tomatoes.jpeg" class="rounded float-end" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="./Images/pear.jpeg" class="rounded mx-auto d-block " alt="...">
+            </div>
+            <div class="col-md-3">
+                <picture>
+                    <source srcset="./Images" type="image/svg+xml">
+                    <img src="./Images/grapes.jpeg" class="img-fluid img-thumbnail" alt="...">
+                  </picture>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS link -->
+    <script src="./js/bootstrap.bundle.js">
+    </script>
+</body>
+</html>

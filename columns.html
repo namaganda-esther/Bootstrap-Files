@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Columns</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 
-    <!-- Vertical alignment -->
+    <h3>column Alignment</h3>
+    <!-- Vertical Alignment -->
+    <h4>Vertical alignment</h4>
     <div class="container">
         <div class="row border">
           <div class="col align-self-start">
@@ -24,8 +27,19 @@
         </div>
     </div><br><br>
 
-    <div class="container">
-        <div class="row align-items-start">
+    <div class="container border">
+        <div class="row align-items-start" style="height: 100px;">
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+        </div>   
+        <div class="row align-items-center" style="height: 200px;">
           <div class="col">
             One of three columns
           </div>
@@ -36,18 +50,7 @@
             One of three columns
           </div>
         </div>
-        <div class="row align-items-center">
-          <div class="col">
-            One of three columns
-          </div>
-          <div class="col">
-            One of three columns
-          </div>
-          <div class="col">
-            One of three columns
-          </div>
-        </div>
-        <div class="row align-items-end">
+        <div class="row align-items-end" style="height: 50px;">
           <div class="col">
             One of three columns
           </div>
@@ -60,6 +63,7 @@
         </div>
     </div><br><br><br>
 
+    <h4>Horizontal alignment</h4>
     <!-- horizontal Alignment -->
     <div class="container border">
         <div class="row justify-content-start">
@@ -110,7 +114,77 @@
             One of two columns
           </div>
         </div>
+    </div><br><br><br>
+
+    <h3>Gutters</h3>
+    <!-- GUTTERS -->
+    <!-- GUTTERS -->
+    <!-- padding btn your colums used to responsively space and align content -->
+    
+    <h4>Horizontal gutters</h4>
+    <!-- Horizontal Gutters -->
+    <div class="container px-4">
+      <div class="row gx-5">
+        <div class="col">
+         <div class="p-3 border">Custom column padding</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border">Custom column padding</div>
+        </div>
+      </div>
+    </div><br><br><br>
+
+    <!-- example 2 .overflow-hidden class -->
+    <div class="container overflow-hidden">
+      <div class="row gx-5">
+        <div class="col">
+         <div class="p-3 border">Custom column padding</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border">Custom column padding</div>
+        </div>
+      </div>
+    </div><br><br><br>
+
+    <h4>vertical gutters</h4>
+    <!-- Vertical gutters -->
+    <div class="container overflow-hidden">
+      <div class="row gy-3">
+        <div class="col-6">
+          <div class="p-3 border">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+      </div>
+    </div><br><br><br>
+
+    <h4>vertical and horizontal gutters</h4>
+    <!-- Horizontal & vertical gutters -->
+    <div class="container">
+      <div class="row g-2">
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+      </div>
     </div>
+
+
 
 
     <script src="./js/bootstrap.bundle.js"></script>

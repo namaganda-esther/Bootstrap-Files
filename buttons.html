@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Buttons</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <!-- all the various button types -->
+        <br><h4>General button structure</h4>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+
+    <!-- Button tags <a> <input> links should be given a role="button" 
+    to appropriately convey their purpose to assistive technologies such as screen readers. -->
+    <div class="container">
+        <br><h4>Button tags</h4>
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <button class="btn btn-primary" type="submit">Button</button>
+        <input class="btn btn-primary" type="button" value="Input">
+        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn btn-primary" type="reset" value="Reset">
+    </div>
+    
+    <!-- Outline buttons. In need of a button, but not the hefty 
+    background colors they bring? Replace the default modifier classes with the .btn-outline-* -->
+    <div class="container">
+        <br><h4>Outline buttons</h4>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+    </div>
+
+    <!-- button sizes Add .btn-lg or .btn-sm for additional sizes.-->
+    <div class="container">
+        <br><h4>Button with different sizes</h4>
+        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <button type="button" class="btn btn-secondary">Large button</button>
+
+        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+        <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+    </div>
+
+    <!--Block buttons Create responsive stacks of full-width, “block buttons” -->
+    <div class="container">
+        <br><h4>Block buttons</h4>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+          </div><br><br>
+           
+          <!--vertically stacked buttons until the md breakpoint, 
+            where .d-md-block replaces the .d-grid class-->
+          <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+          </div><br><br>
+
+          <!-- adjust the width of your block buttons with grid column 
+            width classes.for a half-width “block button”, use .col-6. 
+            Center it horizontally with .mx-auto,  -->
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+          </div><br><br>
+          
+          <!-- adjust the alignment of buttons when horizontal. -->
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+          </div>
+    </div>
+
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>

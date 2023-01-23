@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Forms</title>
+    <!-- bootstrap CSS link -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="text-center">
+            <h2>Get in touch</h2>
+            <p class="lead">Questions? Do not hesitate to contact us.</p>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <form action="">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="my@email.com" class="form-control"/>
+
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="name" name="name" id="name" placeholder="e.g. Esther" class="form-control"/>
+
+                    <label for="subject" class="form-label">Subject</label>
+                    <select name="subject" id="subject" class="form-select">
+                        <option value="pricing">Pricing</option>
+                        <option value="technical" selected>Technical</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <div class="form-floating my-5">
+                        <textarea 
+                            name="query" 
+                            id="query" 
+                            style="height: 200px"
+                            placeholder="Write a message"
+                            class="form-control">
+                        </textarea>
+                        <label for="query">Write your message</label>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--bootstrap js link  -->
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
